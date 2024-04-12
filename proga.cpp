@@ -5,20 +5,20 @@ using namespace std;
 int main(){
 	setlocale(LC_ALL, "rus");
 	float widht, hight, area, perimetr,diagonal;
-	//Ввод данных
-	cout<<"Введите ширину прямоугольника "<<endl;
+	//Р’РІРѕРґ РґР°РЅРЅС‹С…
+	cout<<"Р’РІРµРґРёС‚Рµ С€РёСЂРёРЅСѓ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР°В "<<endl;
 	cin>>widht;
-	cout<<"Введите длину прямоугольника"<<endl;
+	cout<<"Р’РІРµРґРёС‚Рµ РґР»РёРЅСѓ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР°"<<endl;
 	cin>>hight;
 	if (widht<=0||hight<=0){
 	cout<<"error"<<endl;
 	return 0;
 }
-	area=widht*hight;// Нахождение площади прямоугольника
-	perimetr=2*(widht+hight); //Нахождение периметра прямоугольника
-	diagonal=sqrt(widht*widht+hight*hight);// Нахождение диагонали
-	cout<<"Площадь прямоугольника"<<" "<<area<<endl;
-	cout<<"Периметр прямоугольника"<<" "<<perimetr<<endl;
-	cout<<"Длина диагонали"<<" "<<diagonal<<endl;
+	area=widht*hight;// РќР°С…РѕР¶РґРµРЅРёРµ РїР»РѕС‰Р°РґРё РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР°
+	perimetr=2*(widht+hight); //РќР°С…РѕР¶РґРµРЅРёРµ РїРµСЂРёРјРµС‚СЂР° РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР°
+	diagonal=sqrt(widht*widht+hight*hight);// РќР°С…РѕР¶РґРµРЅРёРµ РґРёР°РіРѕРЅР°Р»Рё
+	cout<<"РџР»РѕС‰Р°РґСЊ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР°"<<" "<<area<<endl;
+	cout<<"РџРµСЂРёРјРµС‚СЂ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР°"<<" "<<perimetr<<endl;
+	cout<<"Р”Р»РёРЅР° РґРёР°РіРѕРЅР°Р»Рё"<<" "<<diagonal<<endl;
 	return 0
 }
