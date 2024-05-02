@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "rus");
+	int  r;
+	double pi = 3.14;
+	float alpha;
+	cout << "Введите радиус: ";
+	cin >> r;
+	if (r < 0)
+	{
+		cout << "Это отрицательное число!" << endl;
+		return 0;
+	}
+	if (!cin)
+	{
+		cout << "Это не число!" << endl;
+		return 0;
+	}
+	cout << "Введите угол: "; 
+	cin >> alpha;
+	if (alpha < 0)
+	{
+		cout << "Это отрицательное число!" << endl;
+		return 0;
+	}
+	if (!cin)
+	{
+		cout << "Это не число!" << endl;
+		return 0;
+	}
+	cout << "Длина окружности = " << 2 * pi * r << endl;
+	cout << "Площадь окружности = " << pi * (r * r) << endl;
+	float corner = alpha / 360;
+	cout << "Площадь кругового сектора = " << pi * (r * r) * corner;
+	return 0;
+}
