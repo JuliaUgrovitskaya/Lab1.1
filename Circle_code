@@ -6,34 +6,34 @@ int main()
 	setlocale(LC_ALL, "rus");
 	int  r;
 	double pi = 3.14;
-	float alpha;
+	float alpha; 
 	cout << "Введите радиус: ";
-	cin >> r;
-	if (r < 0)
+	cin >> r; // ввод числа (радиуса)
+	if (r < 0) // проверка на отрицательное число
 	{
 		cout << "Это отрицательное число!" << endl;
 		return 0;
-	}
-	if (!cin)
+	} 
+	if (!cin) // проверка на ввод не числового значения
 	{
 		cout << "Это не число!" << endl;
 		return 0;
 	}
 	cout << "Введите угол: ";
-	cin >> alpha;
-	if (alpha < 0)
+	cin >> alpha; // ввод числа (угол)
+	if (alpha < 0) // проверка на отрицательное число
 	{
 		cout << "Это отрицательное число!" << endl;
 		return 0;
 	}
-	if (!cin)
+	if (!cin) // проврка на ввод не числового значения
 	{
 		cout << "Это не число!" << endl;
 		return 0;
 	}
 	cout << "Длина окружности = " << 2 * pi * r << " см" << endl;
 	cout << "Площадь круга = " << pi * (r * r) << " см^2" << endl;
-	float corner = alpha / 360;
+	float corner = alpha / 360; // расчет необходимого значения для формулы площади кругового сектора
 	cout << "Площадь кругового сектора = " << pi * (r * r) * corner << " см^2" << endl;
 	return 0;
 }
